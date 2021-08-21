@@ -883,10 +883,9 @@ header {
   justify-content: center;
   margin-right: 30px;
   transition: opacity 1000ms ease-in;
-  =
 }
 
-.section-spacer{
+.section-spacer {
   background-color: #ceae4c;
   height: 20px;
 }
@@ -1040,8 +1039,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 320px)
-{
+@media screen and (max-width: 320px) {
   .right {
     padding: 15px 38px 15px 25px;
   }
@@ -1203,14 +1201,13 @@ textarea {
   .d3 {
     margin-top: -40px;
   }
-  .coaches{
+  .coaches {
     flex-direction: column;
   }
 
-  .spacer{
+  .spacer {
     display: none;
   }
-
 }
 
 @media (max-width: 990px) {
@@ -1278,7 +1275,6 @@ textarea {
     font-weight: 300;
     color: rgb(233, 233, 233);
   }
-  
 }
 
 @media (max-width: 900px) {
@@ -1629,19 +1625,19 @@ textarea {
       line-height: 1.2;
     }
 
-    .coach-one img{
+    .coach-one img {
       width: 225px;
     }
 
-    .coach-two img{
+    .coach-two img {
       width: 225px;
     }
 
-    .coach-info-paragraph1{
+    .coach-info-paragraph1 {
       width: 90%;
     }
 
-    .coach-info-paragraph2{
+    .coach-info-paragraph2 {
       width: 90%;
     }
   }
@@ -1777,16 +1773,16 @@ textarea {
       width: 140px;
     }
 
-   .coaches-section-one{
-     padding: 100px 0;
-   }
+    .coaches-section-one {
+      padding: 100px 0;
+    }
 
-    .coach-info-paragraph1{
+    .coach-info-paragraph1 {
       width: 110%;
       font-size: 17px;
     }
 
-    .coach-info-paragraph2{
+    .coach-info-paragraph2 {
       width: 110%;
       font-size: 17px;
     }
@@ -1884,47 +1880,46 @@ textarea {
       width: 270px;
     }
 
-    .coaches-section-one{
+    .coaches-section-one {
       padding: 70px 20px;
     }
 
-    .coach-one{
+    .coach-one {
       padding: 0 40px;
     }
 
-    .coaches-heading{
+    .coaches-heading {
       font-size: 22px;
     }
 
-    .coach-info-heading h2{
+    .coach-info-heading h2 {
       font-size: 20px;
     }
 
-    .coach-info-paragraph1{
+    .coach-info-paragraph1 {
       font-size: 16px;
       line-height: 24px;
     }
 
-    .coach-info-paragraph2{
+    .coach-info-paragraph2 {
       font-size: 16px;
       line-height: 24px;
     }
 
-    .coach-two{
+    .coach-two {
       padding: 0 40px;
       margin-top: 50px;
     }
-    }
   }
+}
 
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
