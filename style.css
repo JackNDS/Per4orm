@@ -826,14 +826,16 @@ header {
 .coaches {
   display: flex;
   flex-direction: row;
+  padding: 0 80px;
+  justify-content: center;
 }
 
 .coach-one {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 30px 80px;
+  padding: 0px 30px;
+  width: 420px;
 }
 
 .coach-image1 {
@@ -859,7 +861,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 80px;
+  padding: 0px 30px;
+  width: 420px;
 }
 
 .coach-image2 {
@@ -919,6 +922,14 @@ header {
   width: 85%;
 }
 
+.coach-info-paragraph3 {
+  text-align: center;
+  color: #f4f4f4;
+  font-weight: 300;
+  font-size: 16px;
+  width: 75%;
+}
+
 .spacer {
   background-color: #ceae4c33;
   width: 1px;
@@ -927,13 +938,40 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 30px;
+  margin-right: 0px;
   transition: opacity 1000ms ease-in;
 }
 
 .section-spacer {
   background-color: #ceae4c;
   height: 20px;
+}
+
+.coach-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 30px;
+  width: 420px;
+}
+
+.coach-image3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1000ms ease-in;
+}
+
+.coach-image3 img {
+  width: 275px;
+  object-fit: contain;
+  transition: transform 0.5s;
+}
+
+.coach-image3 img:hover {
+  transform: scale(1.05);
 }
 
 /* Contact */
@@ -1251,8 +1289,25 @@ textarea {
   .d3 {
     margin-top: -40px;
   }
+
   .coaches {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .coach-one {
+    padding: 20px 0;
+    width: auto;
+  }
+
+  .coach-two {
+    padding: 20px 0;
+    width: auto;
+  }
+
+  .coach-three {
+    padding: 20px 0;
+    width: auto;
   }
 
   .spacer {
@@ -1683,11 +1738,23 @@ textarea {
       width: 225px;
     }
 
+    .coach-three img {
+      width: 225px;
+    }
+
+    .coaches {
+      padding: 0 40px;
+    }
+
     .coach-info-paragraph1 {
       width: 90%;
     }
 
     .coach-info-paragraph2 {
+      width: 90%;
+    }
+
+    .coach-info-paragraph3 {
       width: 90%;
     }
   }
@@ -1823,18 +1890,27 @@ textarea {
       width: 140px;
     }
 
+    .coaches {
+      padding: 0 40px;
+    }
+
     .coaches-section-one {
       padding: 100px 0;
     }
 
     .coach-info-paragraph1 {
-      width: 110%;
-      font-size: 17px;
+      width: 90%;
+      font-size: 18px;
     }
 
     .coach-info-paragraph2 {
-      width: 110%;
-      font-size: 17px;
+      width: 90%;
+      font-size: 18px;
+    }
+
+    .coach-info-paragraph3 {
+      width: 90%;
+      font-size: 18px;
     }
   }
 
@@ -1956,7 +2032,17 @@ textarea {
       line-height: 24px;
     }
 
+    .coach-info-paragraph3 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
     .coach-two {
+      padding: 0 40px;
+      margin-top: 50px;
+    }
+
+    .coach-three {
       padding: 0 40px;
       margin-top: 50px;
     }
