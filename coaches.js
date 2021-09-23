@@ -4,6 +4,7 @@ const sectionTwo = document.querySelector('.section-2');
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 
+
 const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav_center');
@@ -48,7 +49,7 @@ sectionOneObserver.observe(sectionOne);
 
 const appearOptions = {
   threshold: 0,
-  rootMargin: '0px 0px -250px 0px'
+  rootMargin: '0px 0px -220px 0px'
 };
 
 const appearOnScroll = new IntersectionObserver(function(
@@ -73,3 +74,112 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
+
+//Expanding Coach Information
+
+const shannon = document.querySelector('.shannon');
+const coach1 = document.querySelector('.coach-1');
+const chris = document.querySelector('.chris');
+const coach2 = document.querySelector('.coach-2');
+const brad = document.querySelector('.brad');
+const coach3 = document.querySelector('.coach-3');
+const peter = document.querySelector('.peter');
+const coach4 = document.querySelector('.coach-4');
+const james = document.querySelector('.james');
+const coach5 = document.querySelector('.coach-5');
+const lynda = document.querySelector('.lynda');
+const coach6 = document.querySelector('.coach-6');
+const sam = document.querySelector('.sam');
+const coach7 = document.querySelector('.coach-7');
+const closeBtn1 = document.querySelector('.button-close');
+const closeBtn2 = document.querySelector('.button-close2');
+const closeBtn3 = document.querySelector('.button-close3');
+const closeBtn4 = document.querySelector('.button-close4');
+const closeBtn5 = document.querySelector('.button-close5');
+const closeBtn6 = document.querySelector('.button-close6');
+const closeBtn7 = document.querySelector('.button-close7');
+
+shannon.addEventListener('click', () => {
+  coach1.classList.add('active');
+});
+closeBtn1.addEventListener('click', () => {
+  coach1.classList.remove('active');
+});
+window.onclick = function(one) {
+  if (one.target == coach1) {
+    coach1.classList.remove('active');
+  }
+}
+
+chris.addEventListener('click', () => {
+  coach2.classList.add('active');
+});
+closeBtn2.addEventListener('click', () => {
+  coach2.classList.remove('active');
+});
+window.onclick = function(event) {
+  if (event.target == coach2) {
+    coach2.classList.remove('active');
+  }
+}
+
+brad.addEventListener('click', () => {
+  coach3.classList.add('active');
+});
+closeBtn3.addEventListener('click', () => {
+  coach3.classList.remove('active');
+});
+window.onclick = function(event) {
+  if (event.target == coach3) {
+    coach3.classList.remove('active');
+  }
+}
+
+peter.addEventListener('click', () => {
+  coach4.classList.add('active');
+});
+closeBtn4.addEventListener('click', () => {
+  coach4.classList.remove('active');
+});
+window.onclick = function(event) {
+  if (event.target == coach4) {
+    coach4.classList.remove('active');
+  }
+}
+
+james.addEventListener('click', () => {
+  coach5.classList.add('active');
+});
+closeBtn5.addEventListener('click', () => {
+  coach5.classList.remove('active');
+});
+window.onclick = function(event) {
+  if (event.target == coach5) {
+    coach5.classList.remove('active');
+  }
+}
+
+lynda.addEventListener('click', () => {
+  coach6.classList.add('active');
+});
+closeBtn6.addEventListener('click', () => {
+  coach6.classList.remove('active');
+});
+window.onclick = function(event) {
+  if (event.target == coach6) {
+    coach6.classList.remove('active');
+  }
+}
+
+sam.addEventListener('click', () => {
+  coach7.classList.add('active');
+});
+closeBtn7.addEventListener('click', () => {
+  coach7.classList.remove('active');
+});
+window.onclick = function(event) {
+  if (event.target == coach7) {
+    coach7.classList.remove('active');
+  }
+}
+
