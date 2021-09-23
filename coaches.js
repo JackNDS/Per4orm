@@ -114,6 +114,7 @@ window.onclick = function(one) {
 chris.addEventListener('click', () => {
   coach2.classList.add('active');
 });
+chris.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth'});
 closeBtn2.addEventListener('click', () => {
   coach2.classList.remove('active');
 });
@@ -126,6 +127,7 @@ window.onclick = function(event) {
 brad.addEventListener('click', () => {
   coach3.classList.add('active');
 });
+brad.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth'});
 closeBtn3.addEventListener('click', () => {
   coach3.classList.remove('active');
 });
@@ -138,6 +140,7 @@ window.onclick = function(event) {
 peter.addEventListener('click', () => {
   coach4.classList.add('active');
 });
+peter.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth'});
 closeBtn4.addEventListener('click', () => {
   coach4.classList.remove('active');
 });
@@ -150,6 +153,7 @@ window.onclick = function(event) {
 james.addEventListener('click', () => {
   coach5.classList.add('active');
 });
+james.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth'});
 closeBtn5.addEventListener('click', () => {
   coach5.classList.remove('active');
 });
@@ -162,6 +166,7 @@ window.onclick = function(event) {
 lynda.addEventListener('click', () => {
   coach6.classList.add('active');
 });
+lynda.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth'});
 closeBtn6.addEventListener('click', () => {
   coach6.classList.remove('active');
 });
@@ -171,9 +176,11 @@ window.onclick = function(event) {
   }
 }
 
+
 sam.addEventListener('click', () => {
   coach7.classList.add('active');
 });
+sam.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth'});
 closeBtn7.addEventListener('click', () => {
   coach7.classList.remove('active');
 });
