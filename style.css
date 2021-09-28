@@ -458,6 +458,7 @@ header {
 
 /* Section 3 */
 .section-3 {
+  display: none;
   height: auto;
   margin: 0;
   padding: 80px 50px;
@@ -1481,12 +1482,14 @@ textarea {
     display: none;
   }
   .section-3 {
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: column;
     align-items: center;
   }
   .membership-grid-tablet {
     display: grid;
+
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
