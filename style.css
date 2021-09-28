@@ -205,6 +205,14 @@ header {
   align-items: center;
 }
 
+.home-content h1 span {
+  color: #ceae4c;
+}
+
+.home-content p span {
+  color: #ceae4c;
+}
+
 .app-icon {
   margin-top: 30px;
   width: 130px;
@@ -223,9 +231,13 @@ header {
   font-weight: 600;
 }
 
+.span1 {
+  font-weight: 400;
+  color: #fff !important;
+}
+
 .home-intro h1 span {
   font-family: 'museo-sans', sans-serif;
-  font-weight: 200;
 }
 
 .home-intro p {
@@ -454,6 +466,10 @@ header {
 
 .section-3-heading {
   transition: opacity 350ms ease-in;
+}
+
+.section-3-heading span {
+  color: #ceae4c;
 }
 
 .section-3-heading p {
