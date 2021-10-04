@@ -270,7 +270,7 @@ header {
 .section-2 {
   height: 225vh;
   margin: 0;
-  padding: 80px 50px;
+  padding: 0 50px 80px 50px;
   background-color: #333;
 }
 
@@ -1134,6 +1134,23 @@ header {
 .our-team .pic2 img {
   height: 100%;
   width: 100%;
+}
+
+/* Video */
+.video {
+  background-color: #333;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  justify-content: center;
+  width: 55%;
 }
 
 /* Contact */
