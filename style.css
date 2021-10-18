@@ -268,9 +268,9 @@ header {
 }
 
 .section-2 {
-  height: 225vh;
+  height: 155vh;
   margin: 0;
-  padding: 0 50px 80px 50px;
+  padding: 80px 50px 80px 50px;
   background-color: #333;
 }
 
@@ -1946,7 +1946,7 @@ textarea {
     }
 
     .section-2 {
-      height: 280vh;
+      height: 150vh;
     }
 
     .mobile-img1 img {
@@ -2045,7 +2045,7 @@ textarea {
     }
 
     .section-2 {
-      height: 250vh;
+      height: 150vh;
     }
 
     .footer-links {
