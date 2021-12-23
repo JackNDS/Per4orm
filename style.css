@@ -1942,9 +1942,12 @@ textarea {
     .home-content h1 {
       font-size: 40px;
     }
+    .home-content p {
+      padding: 0px 15px;
+    }
 
     .section-2 {
-      height: 250vh;
+      height: 275vh;
     }
 
     .mobile-img1 img {
@@ -2043,7 +2046,7 @@ textarea {
     }
 
     .section-2 {
-      height: 220vh;
+      height: 270vh;
     }
 
     .footer-links {
@@ -2103,7 +2106,7 @@ textarea {
     }
 
     .home-content {
-      padding: 0 20px;
+      padding: 0 10px;
     }
 
     .site-logo img {
@@ -2120,7 +2123,7 @@ textarea {
 
     .home-content p {
       font-size: 20px;
-      padding: 0 40px;
+      padding: 0px 10px;
     }
 
     .app-store {
@@ -2169,7 +2172,7 @@ textarea {
     }
 
     .section-2 {
-      height: 240vh;
+      height: 320vh;
     }
 
     .section-3 {
