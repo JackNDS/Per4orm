@@ -242,6 +242,10 @@ header {
 
 .links {
   padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin-top: -30px;
 }
 
@@ -767,11 +771,12 @@ header {
   -ms-flex-align: end;
   align-items: flex-end;
   border-radius: 5px;
-  background-color: #bb9521;
+  background-color: #000;
   -webkit-transition: background-color 300ms ease;
   transition: opacity 300ms ease, transform 0.5s;
-  color: #fff;
+  color: #dead1a;
   line-height: 1;
+  border: 2px solid #bb9521;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 1px;
@@ -1045,6 +1050,11 @@ header {
     top: 16%;
     left: 0%;
   }
+  .sign-up2 {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -1140,6 +1150,7 @@ header {
   .sign-up2 {
     margin-bottom: 30px;
     margin-top: 10px;
+    font-size: 18px;
   }
   .pic2 img {
     margin-top: 40px;
@@ -1155,6 +1166,15 @@ header {
   .coach-info-lg {
     color: #fff;
     width: 300px;
+  }
+  .button-text2 {
+    width: 300px;
+    text-align: center;
+  }
+
+  .sign-up2 {
+    font-size: 16px;
+    padding: 15px 20px;
   }
 }
 
