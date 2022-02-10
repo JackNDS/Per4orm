@@ -940,6 +940,9 @@ header {
   .row {
     grid-template-columns: 1fr;
   }
+  .home-intro p {
+    width: 90%;
+  }
 }
 .our-team {
   padding-bottom: 30px;
