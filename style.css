@@ -240,15 +240,20 @@ header {
   font-family: 'museo-sans', sans-serif;
 }
 
+.links {
+  padding-bottom: 30px;
+  margin-top: -30px;
+}
+
 .home-intro p {
   font-size: 26px;
   font-weight: 300;
-  margin: 0px;
-  margin-bottom: 30px;
+  width: 80%;
+  margin-top: -5px;
 }
 
 .app-store {
-  width: 200px;
+  width: 250px;
   margin: 15px;
   transition: transform 0.5s;
 }
@@ -258,7 +263,7 @@ header {
 }
 
 .google-play {
-  width: 200px;
+  width: 250px;
   margin: 15px;
   transition: transform 0.5s;
 }
@@ -744,6 +749,43 @@ header {
   font-size: 14px;
 }
 
+.sign-up2 {
+  position: relative;
+  z-index: 20;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  padding: 20px 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  border-radius: 5px;
+  background-color: #bb9521;
+  -webkit-transition: background-color 300ms ease;
+  transition: opacity 300ms ease, transform 0.5s;
+  color: #fff;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 60px;
+  margin-top: -20px;
+}
+
+.sign-up2:hover {
+  transform: scale(1.1);
+}
+
 .membership-grid-item p {
   margin: 0;
   color: #f4f4f4;
@@ -883,6 +925,9 @@ header {
 @media (max-width: 750px) {
   .row {
     grid-template-columns: 1fr 1fr;
+  }
+  .links {
+    margin-top: 0px;
   }
 }
 
@@ -1092,6 +1137,10 @@ header {
     color: #fff;
     width: 350px;
   }
+  .sign-up2 {
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
   .pic2 img {
     margin-top: 40px;
     transform: scale(1.6);
@@ -1140,6 +1189,7 @@ header {
   background-color: #333;
   padding: 0px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
