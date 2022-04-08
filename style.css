@@ -1541,6 +1541,42 @@ textarea {
   border-radius: 5px;
 }
 
+/* Privacy Policy */
+.privacy-policy{
+  height: auto;
+  width: 100%;
+  background-color: #333;
+  padding: 150px 0px;
+}
+
+.privacy-policy-text{
+  padding: 0px 100px;
+  color: #f4f4f4;
+  font-family: 'museo-sans', 'Dosis', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.privacy-link a{
+  text-decoration: none;
+  color: #ceae4c;
+  margin: 0px 40px;
+}
+
+.privacy-link:hover{
+  transform: scale(1.1);
+}
+
+.privacy-link{
+  transition: 0.5s all;
+}
+
+.end{
+  display: flex;
+}
+
+
+
 /* Media Queries */
 @media (max-width: 1200px) {
   .nav__link {
@@ -1811,6 +1847,10 @@ textarea {
 @media (max-width: 768px) {
   header {
     padding: 3.2rem 2rem;
+  }
+
+  .privacy-policy-text{
+    padding: 0px 30px;
   }
 
   .main-nav {
