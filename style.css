@@ -2162,8 +2162,8 @@ textarea {
       flex-direction: column;
     }
 
-    .privacy-link a{
-      margin-bottom: 25px;
+    .privacy-link{
+      margin-bottom: 20px;
     }
 
     .sign-up3 {
