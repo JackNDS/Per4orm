@@ -167,6 +167,11 @@ header {
 .burger {
   display: none;
   cursor: pointer;
+  transition: 0.5s all;
+}
+
+.line1, .line2, .line3{
+  transition: 0.5s all;
 }
 
 .nav-scrolled .burger div {
@@ -179,6 +184,18 @@ header {
   border-radius: 2px;
   background-color: #ceae4c;
   margin: 4px;
+}
+
+.open .line1 {
+  transform: rotate(45deg) translateY(10px) translateX(7px);
+}
+
+.open .line2 {
+  display: none;
+}
+
+.open .line3 {
+  transform: rotate(-45deg) translateY(1.5px) translateX(-6px);
 }
 
 .burger-btn {

@@ -74,3 +74,13 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
+
+
+/* Mobile Menu */
+const btn = document.getElementById('menu-btn')
+
+function navToggle() {
+    btn.classList.toggle('open')
+}
+
+btn.addEventListener('click', navToggle)
