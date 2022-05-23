@@ -1498,6 +1498,7 @@ textarea {
   letter-spacing: 1px;
   font-weight: 500;
   margin-bottom: 20px;
+  margin: 0px 40px;
 }
 
 .footer-links {
@@ -1558,6 +1559,18 @@ textarea {
   margin-bottom: 12px;
   border-radius: 5px;
 }
+
+.webdesign{
+  height: 60px;
+  opacity: 0.6;
+  margin: 0px 40px;
+  transition: 0.5s all;
+}
+
+.webdesign:hover{
+  transform: scale(1.1);
+}
+
 
 /* Loader */
 /* Loader */
@@ -1669,6 +1682,8 @@ textarea {
 
 .end{
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -2261,6 +2276,9 @@ textarea {
     .privacy-link{
       margin-bottom: 20px;
     }
+    .membership-options{
+      width: 100%;
+    }
 
     .sign-up3 {
       font-size: 16px;
@@ -2380,6 +2398,9 @@ textarea {
 
     .footer-links {
       width: 240px;
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
     .app-store2 {
       width: 110px;
@@ -2389,13 +2410,12 @@ textarea {
     }
     .socials {
       width: 250px;
+      padding-top: 80px;
     }
-    .footer-links {
-      margin: 0;
-      width: 290px;
-    }
+    
     .app-store2 {
       width: 140px;
+      padding-bottom: 15px;
     }
     .google-play2 {
       width: 140px;
@@ -2414,6 +2434,9 @@ textarea {
       font-size: 18px;
     }
 
+    .webdesign{
+      padding-bottom: 10px;
+    }
     .coach-info-paragraph2 {
       width: 90%;
       font-size: 18px;
@@ -2557,6 +2580,23 @@ textarea {
       padding: 0 40px;
       margin-top: 50px;
     }
+    .sign-up{
+      max-width: 240px;
+    }
+    .sign-up2{
+      max-width: 240px;
+    }
+    .sign-up3{
+      max-width: 220px;
+    }
+    .membership-grid-tablet .membership-option{
+      max-width: 230px;
+    }
+
+    .feature2{
+      width: 200px;
+    }
+
   }
 }
 
