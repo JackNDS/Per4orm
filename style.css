@@ -208,7 +208,7 @@ header {
 
 .home-intro {
   height: 100vh;
-  background: rgb(66, 75, 85) url(/ball.jpg);
+  background: rgb(66, 75, 85) url(/ball.webp);
   background-size: cover;
   background-blend-mode: multiply;
   color: white;
@@ -1328,7 +1328,7 @@ header {
 }
 
 .left {
-  background: rgb(66, 75, 85, 0.6) url('/contact.jpg') no-repeat center;
+  background: rgb(66, 75, 85, 0.6) url('/contact.webp') no-repeat center;
   background-size: cover;
   background-blend-mode: multiply;
   height: 100%;
