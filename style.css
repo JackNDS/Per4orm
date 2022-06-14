@@ -1546,6 +1546,17 @@ textarea {
   transform: scale(1.1);
 }
 
+.content-heading{
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #ceae4c;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /* Booking Screen */
 
 .message{
