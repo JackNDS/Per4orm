@@ -208,22 +208,77 @@ header {
 
 .home-intro {
   height: 100vh;
-  background: rgb(66, 75, 85) url(/ball.webp);
+  background: linear-gradient(to bottom, #000, #1E1E1E);
   background-size: cover;
   background-blend-mode: multiply;
   color: white;
-  text-align: center;
   display: flex;
+  text-align: left;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding-left: 100px;
+  padding-top: 20px;
   align-items: center;
+}
+
+.cricketman{
+  position: absolute;
+  top: 5%;
+  left: 0;
+  z-index: 1;
+  height: 95%;
+  opacity: 10%;
+  transform: translateX(-20px);
+}
+
+.home-phoneimage{
+  z-index: 10;
+}
+
+.home-phoneimage img{
+  height: 500px;
+  padding: 0 60px;
+  transition: 0.4s all ease;
+  display: none;
+}
+
+.wide{
+  height: 400px !important;
+}
+
+.home-phoneimage img.current{
+  display: block;
+}
+
+.home-phoneimage img:hover{
+  transform: translateY(-15px);
 }
 
 .home-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  z-index: 200;
+}
+
+.home-content h1{
+  font-family: 'montbold';
+  padding: 0;
+  margin: -20px 0px;
+  font-size: 80px;
+  margin-left: -4px;
+}
+.home-content h2{
+  font-family: 'montbook';
+  padding: 0;
+  margin: 0;
+  font-size: 45px;
+}
+
+.home-content p{
+  font-size: 27px;
+  margin-top: 5px;
+  letter-spacing: -1px;
+  font-family: 'montthin';
 }
 
 .home-content h1 span {
@@ -232,6 +287,46 @@ header {
 
 .home-content p span {
   color: #ceae4c;
+  
+}
+
+.home-buttons{
+  display: flex;
+  margin-left: -10px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  z-index: 200;
+}
+.p4m-button{
+  height: 64px;
+  transition: 0.4s all;
+  overflow: visible;
+}
+
+.appstore7{
+  margin-right: 15px;
+}
+
+.p4m-button:hover{
+  transform: scale(1.08);
+}
+
+.stats{
+  display: flex;
+}
+
+.stats h3{
+  font-family: 'montthin';
+  color: #BEA754;
+  font-size: 32px;
+  margin: 0;
+  margin-right: 120px;
+}
+
+.stats p{
+  margin-top: -3px;
+  font-family: 'montlight';
+  font-size: 16px;
 }
 
 .app-icon {
@@ -246,20 +341,7 @@ header {
   transform: translateY(-10px);
 }
 
-.home-intro h1 {
-  margin: 20px;
-  font-size: 60px;
-  font-weight: 600;
-}
 
-.span1 {
-  font-weight: 400;
-  color: #fff !important;
-}
-
-.home-intro h1 span {
-  font-family: 'museo-sans', sans-serif;
-}
 
 .links {
   padding-bottom: 30px;
@@ -270,12 +352,6 @@ header {
   margin-top: -30px;
 }
 
-.home-intro p {
-  font-size: 26px;
-  font-weight: 300;
-  width: 80%;
-  margin-top: -5px;
-}
 
 .app-store {
   width: 250px;
@@ -302,6 +378,7 @@ header {
   margin: 0;
   padding: 0px 50px 80px 50px;
   background-color: #333;
+  z-index: 10;
 }
 
 .section-2-intro {
@@ -1004,9 +1081,6 @@ header {
   .row {
     grid-template-columns: 1fr;
   }
-  .home-intro p {
-    width: 90%;
-  }
 }
 .our-team {
   padding-bottom: 30px;
@@ -1279,6 +1353,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 
 .video-container {
@@ -1743,6 +1818,22 @@ textarea {
     margin-left: 70px;
   }
 }
+
+@media (max-width: 1100px) {
+  .home-phoneimage img{
+    height: 400px;
+  }
+  .wide{
+    height: 350px !important;
+  }
+  .stats h3{
+    margin-right: 80px;
+  }
+  .home-buttons img{
+    height: 55px;
+  }
+}
+
 @media (max-width: 1024px) {
   .nav_center {
     margin-left: -50px;
@@ -1833,6 +1924,7 @@ textarea {
   .spacer {
     display: none;
   }
+  
 }
 
 @media (max-width: 990px) {
@@ -1914,6 +2006,7 @@ textarea {
     font-weight: 300;
     color: rgb(233, 233, 233);
   }
+  
 }
 
 @media (max-width: 900px) {
@@ -1992,6 +2085,9 @@ textarea {
 
   .d3 p {
     width: 250px;
+  }
+  .home-phoneimage img{
+    padding: 0 30px;
   }
 }
 
@@ -2107,13 +2203,7 @@ textarea {
     width: 120px;
   }
 
-  .home-intro h1 {
-    font-size: 50px;
-  }
-
-  .home-intro p {
-    font-size: 22px;
-  }
+  
 
   .app-store {
     width: 170px;
@@ -2172,6 +2262,51 @@ textarea {
 
   .footer-links {
     width: 350px;
+  }
+
+  .home-intro{
+    flex-direction: column;
+    padding: 0;
+    margin-top: 130px;
+  }
+  .home-intro h1 {
+    font-size: 73px;
+    text-align: center;
+  }
+  .home-intro h2 {
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  .home-intro p {
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0.6px;
+  }
+  .home-buttons{
+    justify-content: center;
+  }
+  .home-buttons img{
+    height: 70px;
+  }
+  .stats{
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .stats h3{
+    margin: 0;
+    margin-top: -20px;
+    font-size: 26px;
+  }
+
+  .stats p{
+    font-size: 13px;
+    letter-spacing: -0.5px;
+  }
+  .home-phoneimage img:hover{
+    transform: translateY(-5px);
   }
 }
 
@@ -2299,18 +2434,59 @@ textarea {
     .coach-info-paragraph3 {
       width: 90%;
     }
+    .home-content h1 {
+      font-size: 55px;
+      text-align: center;
+    }
+    .home-content h2 {
+      font-size: 26px;
+      text-align: center;
+      letter-spacing: 1px;
+      margin-bottom: 7px;
+    }
+  
+    .home-content p {
+      font-size: 17px;
+      text-align: center;
+      letter-spacing: -0.6px;
+      margin-top: 7px;
+    }
+    .home-buttons{
+      justify-content: center;
+    }
+    .home-buttons img{
+      height: 60px;
+    }
+    .stats{
+      text-align: center;
+      justify-content: space-around;
+    }
+  
+    .stats h3{
+      margin: 0;
+      margin-top: -20px;
+      font-size: 24px;
+    }
+  
+    .stats p{
+      font-size: 13px;
+      letter-spacing: -0.5px;
+    }
+    .home-phoneimage img{
+      height: 340px;
+    }
+    .home-intro{
+      margin-top: 80px;
+    }
   }
 
   @media (max-width: 450px) {
-    .home-content h1 {
-      font-size: 40px;
-    }
-    .home-content p {
-      padding: 0px 15px;
-    }
 
     .end{
       flex-direction: column;
+    }
+    .home-buttons img{
+      height: 50px;
     }
 
     .privacy-link{
@@ -2360,15 +2536,17 @@ textarea {
     .membership-option {
       padding: 20px 20px 40px;
     }
+    .cricketman{
+      height: 80%;
+      transform: translateX(-60px);
+      top: 25%;
+    }
+
   }
 
   @media (max-width: 375px) {
     header {
       padding: 2.2rem 2rem !important;
-    }
-
-    .home-content {
-      padding: 0 40px;
     }
 
     .site-logo img {
@@ -2379,14 +2557,6 @@ textarea {
       height: 27.5px;
     }
 
-    .home-content h1 {
-      font-size: 35px;
-    }
-
-    .home-content p {
-      font-size: 22px;
-      padding: 0 40px;
-    }
 
     .app-store {
       width: 180px;
@@ -2486,6 +2656,59 @@ textarea {
       width: 90%;
       font-size: 18px;
     }
+    .home-content h1 {
+      font-size: 45px;
+      text-align: center;
+    }
+    .home-content h2 {
+      font-size: 23px;
+      text-align: center;
+      letter-spacing: 1px;
+      margin-bottom: 7px;
+    }
+  
+    .home-content p {
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: -0.6px;
+      margin-top: 7px;
+    }
+    .home-buttons{
+      justify-content: center;
+    }
+    .home-buttons img{
+      height: 45px;
+    }
+    .stats{
+      text-align: center;
+      justify-content: space-around;
+    }
+  
+    .stats h3{
+      margin: 0;
+      margin-top: -20px;
+      font-size: 24px;
+    }
+  
+    .stats p{
+      font-size: 13px;
+      letter-spacing: -0.5px;
+    }
+    .home-phoneimage img{
+      height: 300px;
+    }
+    .home-intro{
+      margin-top: 50px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .home-buttons img{
+      height: 40px;
+    }
+    .cricketman{
+      transform: translateX(-100px);
+    }
   }
 
   @media (max-width: 320px) {
@@ -2509,14 +2732,6 @@ textarea {
       height: 27.5px;
     }
 
-    .home-content h1 {
-      font-size: 30px;
-    }
-
-    .home-content p {
-      font-size: 20px;
-      padding: 0px 10px;
-    }
 
     .app-store {
       width: 160px;
@@ -2640,6 +2855,58 @@ textarea {
   }
 }
 
+@media (max-width: 300px) {
+  .home-phoneimage img{
+    height: 270px;
+  }
+  .home-content h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .home-content h2 {
+    font-size: 23px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -0.6px;
+    margin-top: 7px;
+  }
+  .home-buttons{
+    justify-content: center;
+    margin-top: -5px;
+  }
+  .home-buttons img{
+    height: 38px;
+  }
+  .stats{
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .stats h3{
+    margin: 0;
+/cricketman.webp    margin-top: -15px;
+    font-size: 20px;
+  }
+
+  .stats p{
+    font-size: 12px;
+    letter-spacing: -0.5px;
+  }
+  .home-intro{
+    margin-top: 20px;
+  }
+  .cricketman{
+    transform: translateX(-150px);
+  }
+
+}
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -2649,4 +2916,143 @@ textarea {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+
+/* Fonts */
+
+/* Matter Fonts */
+
+@font-face {
+  font-family: 'matterregular';
+
+  src: url('/fonts/matter-regular-webfont.woff2') format('woff2'),
+       url('/fonts/matter-regular-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'matterlight';
+
+  src: url('/fonts/matter-light-webfont.woff2') format('woff2'),
+       url('/fonts/matter-light-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mattermedium';
+
+  src: url('/fonts/matter-medium-webfont.woff2') format('woff2'),
+       url('/fonts/matter-medium-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'matterheavy';
+
+  src: url('/fonts/matter-heavy-webfont.woff2') format('woff2'),
+       url('/fonts/matter-heavy-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mattersemibold';
+
+  src: url('/fonts/matter-semibold-webfont.woff2') format('woff2'),
+       url('/fonts/matter-semibold-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'matterbold';
+
+  src: url('/fonts/matter-bold-webfont.woff2') format('woff2'),
+       url('/fonts/matter-bold-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+  /* Mont Fonts */
+
+@font-face {
+  font-family: 'montregular';
+
+  src: url('/fonts/mont-regular-webfont.woff2') format('woff2'),
+       url('/fonts/mont-regular-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montsemibold';
+
+  src: url('/fonts/mont-semibold-webfont.woff2') format('woff2'),
+       url('/fonts/mont-semibold-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montbold';
+
+  src: url('/fonts/mont-bold-webfont.woff2') format('woff2'),
+       url('/fonts/mont-bold-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montlight';
+
+  src: url('/fonts/mont-light-webfont.woff2') format('woff2'),
+       url('/fonts/mont-light-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montbook';
+
+  src: url('/fonts/mont-book-webfont.woff2') format('woff2'),
+       url('/fonts/mont-book-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montthin';
+
+  src: url('/fonts/mont-thin-webfont.woff2') format('woff2'),
+       url('/fonts/mont-thin-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
 }
