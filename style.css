@@ -2701,6 +2701,9 @@ textarea {
     .home-intro{
       margin-top: 25px;
     }
+    .cricketman{
+    top: 15%;
+    }
   }
 
   @media (max-width: 350px) {
