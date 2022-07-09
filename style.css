@@ -2541,9 +2541,17 @@ textarea {
       transform: translateX(-60px);
       top: 25%;
     }
+    .home-intro{
+      margin-top: 10%;
+    }
 
   }
 
+  @media (max-width: 400px) {
+    .home-intro{
+      margin-top: 30px;
+    }
+  }
   @media (max-width: 375px) {
     header {
       padding: 2.2rem 2rem !important;
