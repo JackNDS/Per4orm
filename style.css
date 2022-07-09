@@ -240,6 +240,7 @@ header {
   padding: 0 60px;
   transition: 0.4s all ease;
   display: none;
+  
 }
 
 .wide{
@@ -2707,7 +2708,7 @@ textarea {
       height: 300px;
     }
     .home-intro{
-      margin-top: 25px;
+      margin-top: 45px;
     }
     .cricketman{
     top: 15%;

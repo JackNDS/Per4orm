@@ -84,3 +84,33 @@ function navToggle() {
 }
 
 btn.addEventListener('click', navToggle)
+
+
+/* Background Slider */    
+
+const homeimg = document.querySelectorAll('.image777')
+const auto = true;
+const intervalTime = 5000;
+let slideInterval;
+
+const nextBg = () => {
+  // Get current class
+  const current = document.querySelector('.current');
+  // Remove current class
+  current.classList.remove('current')
+  // Check for next background
+  if(current.nextElementSibling) {
+    //Add current to next sibling
+    current.nextElementSibling.classList.add('current');
+  }
+  else {
+    // Add current to start
+    homeimg[0].classList.add('current');
+  }
+}
+
+// Auto Slide
+if(auto) {
+  // Run next bg at interval time
+  slideInterval = setInterval(nextBg, intervalTime);
+}
