@@ -262,14 +262,14 @@ header {
 }
 
 .home-content h1{
-  font-family: 'montbold';
+  font-family: 'matterbold';
   padding: 0;
   margin: -20px 0px;
   font-size: 80px;
   margin-left: -4px;
 }
 .home-content h2{
-  font-family: 'montbook';
+  font-family: 'mattersemibold';
   padding: 0;
   margin: 0;
   font-size: 45px;
@@ -279,7 +279,8 @@ header {
   font-size: 27px;
   margin-top: 5px;
   letter-spacing: -1px;
-  font-family: 'montthin';
+  font-weight: 100;
+  font-family: 'matterlight';
 }
 
 .home-content h1 span {
@@ -317,7 +318,7 @@ header {
 }
 
 .stats h3{
-  font-family: 'montthin';
+  font-family: 'matterlight';
   color: #BEA754;
   font-size: 32px;
   margin: 0;
@@ -326,7 +327,7 @@ header {
 
 .stats p{
   margin-top: -3px;
-  font-family: 'montlight';
+  font-family: 'matterlight';
   font-size: 16px;
 }
 
@@ -2711,6 +2712,7 @@ textarea {
       margin-top: 45px;
     }
     .cricketman{
+      
     top: 15%;
     }
   }
@@ -2996,74 +2998,6 @@ textarea {
 
   src: url('/fonts/matter-bold-webfont.woff2') format('woff2'),
        url('/fonts/matter-bold-webfont.woff') format('woff');
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
-  /* Mont Fonts */
-
-@font-face {
-  font-family: 'montregular';
-
-  src: url('/fonts/mont-regular-webfont.woff2') format('woff2'),
-       url('/fonts/mont-regular-webfont.woff') format('woff');
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montsemibold';
-
-  src: url('/fonts/mont-semibold-webfont.woff2') format('woff2'),
-       url('/fonts/mont-semibold-webfont.woff') format('woff');
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montbold';
-
-  src: url('/fonts/mont-bold-webfont.woff2') format('woff2'),
-       url('/fonts/mont-bold-webfont.woff') format('woff');
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montlight';
-
-  src: url('/fonts/mont-light-webfont.woff2') format('woff2'),
-       url('/fonts/mont-light-webfont.woff') format('woff');
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montbook';
-
-  src: url('/fonts/mont-book-webfont.woff2') format('woff2'),
-       url('/fonts/mont-book-webfont.woff') format('woff');
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montthin';
-
-  src: url('/fonts/mont-thin-webfont.woff2') format('woff2'),
-       url('/fonts/mont-thin-webfont.woff') format('woff');
 
   font-weight: normal;
 
